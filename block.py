@@ -311,7 +311,7 @@ def main():
         s = time.time()
         over_time = False
         
-        # 2초간 Game Over 표시
+        # 0.5초간 Game Over 표시
         font = pygame.font.SysFont("arial", int(sWIDTH / 14))
         game_over = font.render("Game Over", True, BLACK)
         over_rect = game_over.get_rect()
@@ -335,7 +335,7 @@ def FinishGame(): # 게임 종료
     score_time = False
     
     while not score_time:
-        # 5초간 점수 표시 후 첫 화면으로
+        # 1.5초간 점수 표시 후 첫 화면으로
         screen.fill(SCREENCOLOR[nColor]) 
         font = pygame.font.SysFont("arial", int(sWIDTH / 14))
         game_score = font.render(f"Score : {score}", True, SCREENCOLOR[(nColor + 1) % 2])
